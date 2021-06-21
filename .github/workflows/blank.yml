@@ -1,0 +1,500 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Holloway,Courtney Jean
+
+# Controls when the action will run. 
+on:
+  # Triggers the workflow on push or pull request events but only for the master branch
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      # Runs a set of commands using the runners shell
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
+
+
+
+To whom this may interest, 
+
+%!PS-Adobe-3.0 EPSF-3.0
+
+%%BoundingBox:  21 28 575 811
+
+%%Creator: DISLIN  11.0 L
+
+%%CreationDate: 30.01.2021 , 22:38:32
+
+%%EndComments
+
+%%BeginProlog
+
+/cm {0.1417322835 mul} def /rgb {255 div} def /lc 1 string def
+
+/u  { /y exch cm def /x exch cm def newpath  x y moveto } def
+
+/d  { /y exch cm def /x exch cm def x y lineto } def
+
+/p  { stroke } def
+
+/e { /b exch rgb def /g exch rgb def
+
+ /r exch rgb def /v exch cm def /w exch cm def /y exch cm def
+
+ /x exch cm def gsave r g b setrgbcolor newpath x y moveto
+
+ w y lineto w v lineto x v lineto closepath fill grestore } def
+
+/f { /b exch rgb def /g exch rgb def
+
+ /r exch rgb def r g b setrgbcolor } def
+
+/clp {/v exch cm def /w exch cm def /y exch cm def
+
+ /x exch cm def newpath x y moveto
+
+ w y lineto w v lineto x v lineto closepath clip } def
+
+/text { /c1 exch def /a exch def /y exch cm def /x exch cm def
+
+ /Name exch def gsave x y moveto x y translate a rotate c1 0 gt
+
+ { Name stringwidth 2 div neg exch 2 div neg exch rmoveto }
+
+ {} ifelse Name show grestore } def /font { /h exch def
+
+ /s exch def s findfont h scalefont setfont } def
+
+/font2 { /h2 exch def /h1 exch def /s exch def s findfont
+
+ [h2 0 0 h1 0 0] makefont setfont } def
+
+/c { /a exch def /y exch cm def /x exch cm def /i exch def
+
+ gsave x y moveto x y translate a rotate lc 0 i put lc
+
+ stringwidth 2 div neg exch 2 div neg exch rmoveto lc show
+
+ grestore } def
+
+/sec { /b exch rgb def /g exch rgb def /r exch rgb def
+
+ /a2 exch def /a exch def /r2 exch cm def /r1 exch cm def
+
+ /y exch cm def /x exch cm def gsave r g b setrgbcolor newpath
+
+ x y r1 a a2 arc x y r2 a2 a arcn closepath fill grestore } def
+
+/tri { /y3 exch cm def /x3 exch cm def /y2 exch cm def
+
+ /x2 exch cm def /y1 exch cm def /x1 exch cm def
+
+ gsave newpath x1 y1 moveto
+
+ x2 y2 lineto x3 y3 lineto closepath fill grestore } def
+
+/Reencsmalldict 12 dict def
+
+/ReEncodeSmall
+
+{ Reencsmalldict begin
+
+  /NewCodesAndNames exch def
+
+  /NewFontName exch def
+
+  /BaseFontName exch def
+
+  /BaseFontDict
+
+  BaseFontName findfont def
+
+  /NewFont BaseFontDict
+
+  maxlength dict def
+
+  BaseFontDict
+
+  { exch dup /FID ne
+
+    { dup /Encoding eq
+
+      { exch dup length array copy
+
+        NewFont 3 1 roll put
+
+      }
+
+      { exch NewFont 3 1 roll put
+
+      } ifelse
+
+      }
+
+      {pop pop} ifelse
+
+    } forall
+
+    NewFont
+
+    /FontName NewFontName put
+
+    NewCodesAndNames aload pop
+
+    NewCodesAndNames
+
+    length 2 idiv
+
+    { NewFont /Encoding get
+
+    3 1 roll put  } repeat
+
+    NewFontName NewFont
+
+    definefont pop end } def
+
+ /GermanVec [ 8#177 /Adieresis
+
+ 8#200 /Odieresis 8#201 /Udieresis 8#202 /adieresis
+
+ 8#203 /odieresis 8#204 /udieresis 8#205 /germandbls
+
+ 8#206 /Aring     8#207 /Oslash    8#210 /AE
+
+ 8#211 /aring     8#212 /oslash    8#213 /ae
+
+ 8#214 /Ntilde    8#215 /ntilde    8#216 /Ccedilla
+
+ 8#217 /ccedilla  8#220 /Edieresis 8#221 /Idieresis
+
+ 8#222 /edieresis 8#223 /idieresis 8#224 /Aacute
+
+ 8#225 /Eacute    8#226 /Iacute    8#227 /Oacute
+
+ 8#230 /Uacute    8#231 /aacute    8#232 /eacute
+
+ 8#233 /iacute    8#234 /oacute    8#235 /uacute
+
+ 8#236 /Agrave    8#237 /Egrave    8#240 /Igrave
+
+ 8#241 /Ograve    8#242 /Ugrave    8#243 /agrave
+
+ 8#244 /egrave    8#245 /igrave    8#246 /ograve
+
+ 8#247 /ugrave      8#250 /Acircumflex 8#251 /Ecircumflex
+
+ 8#252 /Icircumflex 8#253 /Ocircumflex 8#254 /Ucircumflex
+
+ 8#255 /acircumflex 8#256 /ecircumflex 8#257 /icircumflex
+
+ 8#260 /ocircumflex 8#261 /ucircumflex 8#262 /Atilde
+
+ 8#263 /atilde 8#264 /Otilde 8#265 /otilde 8#266 /Yacute
+
+ 8#267 /yacute 8#270 /ydieresis
+
+ 8#271 /exclamdown 8#272 /questiondown ] def
+
+  150 cm   200 cm translate   1.000000  1.000000 scale
+
+%%EndProlog
+
+%%Page: 1 1
+
+2 setlinecap 2 setlinejoin
+
+0 0 0 f 5.00 cm setlinewidth (Helvetica) (Helvetica-German) GermanVec
+
+ReEncodeSmall (Helvetica-German) 13.2 font (Helvetica-German) 9.2 font 3343 918
+
+u 3343 4595 d p 3343 918 u 3387 918 d p 3372 1838 u 3343 1838 d p 3343 2757 u
+
+3387 2757 d p 48 3476 919 90 c 49 3476 2757 90 c 50 3476 4596 90 c
+
+(Helvetica-German) 13.2 font (Helvetica-German) 9.2 font (Helvetica-German)
+
+13.2 font 82 3599 2600 90 c 101 3599 2666 90 c 115 3599 2721 90 c 105 3599 2761
+
+90 c 100 3599 2804 90 c 117 3599 2862 90 c 101 3599 2920 90 c
+
+(Helvetica-German) 9.2 font 3372 3675 u 3343 3675 d p 3343 4595 u 3387 4595 d p
+
+3343 918 u 743 918 d p 3343 873 u 3343 918 d p 3082 918 u 3082 888 d p 2822 873
+
+u 2822 918 d p 2562 918 u 2562 888 d p 2302 873 u 2302 918 d p 2044 918 u 2044
+
+888 d p 1784 873 u 1784 918 d p 1524 918 u 1524 888 d p 1263 873 u 1263 918 d p
+
+48 3363 748 90 c 46 3363 780 90 c 48 3363 811 90 c 48 2843 748 90 c 46 2843 780
+
+90 c 50 2843 811 90 c 48 2323 748 90 c 46 2323 780 90 c 52 2323 811 90 c 48
+
+1802 748 90 c 46 1802 780 90 c 54 1802 811 90 c 48 1282 748 90 c 46 1282 780 90
+
+c 56 1282 811 90 c 49 764 748 90 c 46 764 780 90 c 48 764 811 90 c
+
+(Helvetica-German) 13.2 font (Helvetica-German) 9.2 font (Helvetica-German)
+
+13.2 font 68 2477 673 180 c 105 2426 673 180 c 115 2386 673 180 c 111 2330 673
+
+180 c 114 2282 673 180 c 100 2234 673 180 c 101 2176 673 180 c 114 2128 673 180
+
+c 32 2093 673 180 c 80 2043 673 180 c 114 1989 673 180 c 111 1941 673 180 c 98
+
+1883 673 180 c 97 1825 673 180 c 98 1767 673 180 c 105 1724 673 180 c 108 1697
+
+673 180 c 105 1670 673 180 c 116 1640 673 180 c 121 1597 673 180 c
+
+(Helvetica-German) 9.2 font 1003 918 u 1003 888 d p 743 873 u 743 918 d p 743
+
+918 u 743 4595 d p 743 918 u 699 918 d p 713 1838 u 743 1838 d p 743 2757 u 699
+
+2757 d p 713 3675 u 743 3675 d p 743 4595 u 699 4595 d p 3343 4595 u 743 4595 d
+
+p 3343 4639 u 3343 4595 d p 3082 4595 u 3082 4625 d p 2822 4639 u 2822 4595 d p
+
+2562 4595 u 2562 4625 d p 2302 4639 u 2302 4595 d p 2044 4595 u 2044 4625 d p
+
+1784 4639 u 1784 4595 d p 1524 4595 u 1524 4625 d p 1263 4639 u 1263 4595 d p
+
+1003 4595 u 1003 4625 d p 72 437 941 90 c 111 437 987 90 c 108 437 1017 90 c
+
+108 437 1036 90 c 111 437 1065 90 c 119 437 1111 90 c 97 437 1157 90 c 121 437
+
+1196 90 c 44 437 1225 90 c 67 437 1262 90 c 111 437 1308 90 c 117 437 1349 90 c
+
+114 437 1382 90 c 116 437 1406 90 c 110 437 1438 90 c 101 437 1478 90 c 121 437
+
+1517 90 c 74 437 1553 90 c 101 437 1592 90 c 97 437 1632 90 c 110 437 1673 90 c
+
+743 4639 u 743 4595 d p 743 918 u 743 4595 d 3343 4595 d 3343 918 d 743 918 d p
+
+initclip 745 920 3341 4593 clp 745 2757 u 3341 2757 d p 2822 920 u 2822 4593 d
+
+p 2302 4593 u 2302 920 d p 1784 920 u 1784 4593 d p 1263 4593 u 1263 920 d p
+
+initclip 0 0 255 f initclip 745 920 3341 4593 clp 1076 920 u 1118 2756 d 1092
+
+4593 d p 1074 920 u 1116 2756 d 1090 4593 d p initclip 6.00 cm setlinewidth
+
+initclip 745 920 3341 4593 clp 2225 920 u 2225 955 d p 2225 983 u 2225 1020 d p
+
+2225 1048 u 2225 1085 d p 2225 1113 u 2225 1150 d p 2225 1178 u 2225 1215 d p
+
+2225 1243 u 2225 1280 d p 2225 1308 u 2225 1345 d p 2225 1373 u 2225 1410 d p
+
+2225 1438 u 2225 1475 d p 2225 1503 u 2225 1540 d p 2225 1568 u 2225 1605 d p
+
+2225 1633 u 2225 1670 d p 2225 1698 u 2225 1735 d p 2225 1763 u 2225 1800 d p
+
+2225 1828 u 2225 1865 d p 2225 1893 u 2225 1930 d p 2225 1958 u 2225 1996 d p
+
+2225 2023 u 2225 2061 d p 2225 2088 u 2225 2126 d p 2225 2153 u 2225 2191 d p
+
+2225 2218 u 2225 2256 d p 2225 2284 u 2225 2321 d p 2225 2349 u 2225 2386 d p
+
+2225 2414 u 2225 2451 d p 2225 2479 u 2225 2516 d p 2225 2544 u 2225 2581 d p
+
+2225 2609 u 2225 2646 d p 2225 2674 u 2225 2711 d p 2225 2739 u 2225 2776 d p
+
+2225 2804 u 2225 2841 d p 2225 2869 u 2225 2906 d p 2225 2934 u 2225 2971 d p
+
+2225 2999 u 2225 3036 d p 2225 3064 u 2225 3101 d p 2225 3129 u 2225 3166 d p
+
+2225 3194 u 2225 3231 d p 2225 3259 u 2225 3296 d p 2225 3324 u 2225 3361 d p
+
+2225 3389 u 2225 3426 d p 2225 3454 u 2225 3491 d p 2225 3519 u 2225 3556 d p
+
+2225 3584 u 2225 3621 d p 2225 3649 u 2225 3686 d p 2225 3714 u 2225 3751 d p
+
+2225 3779 u 2225 3816 d p 2225 3844 u 2225 3881 d p 2225 3909 u 2225 3946 d p
+
+2225 3974 u 2225 4011 d p 2225 4039 u 2225 4077 d p 2225 4104 u 2225 4142 d p
+
+2225 4169 u 2225 4207 d p 2225 4234 u 2225 4272 d p 2225 4299 u 2225 4337 d p
+
+2225 4365 u 2225 4402 d p 2225 4430 u 2225 4467 d p 2225 4495 u 2225 4532 d p
+
+2225 4560 u 2225 4593 d p initclip 0 255 0 f initclip 745 920 3341 4593 clp
+
+1018 920 u 1206 2756 d 1166 4593 d p 1016 920 u 1204 2757 d 1204 2756 d 1164
+
+4593 d p initclip initclip 745 920 3341 4593 clp 2043 920 u 2043 955 d p 2043
+
+983 u 2043 1020 d p 2043 1048 u 2043 1085 d p 2043 1113 u 2043 1150 d p 2043
+
+1178 u 2043 1215 d p 2043 1243 u 2043 1280 d p 2043 1308 u 2043 1345 d p 2043
+
+1373 u 2043 1410 d p 2043 1438 u 2043 1475 d p 2043 1503 u 2043 1540 d p 2043
+
+1568 u 2043 1605 d p 2043 1633 u 2043 1670 d p 2043 1698 u 2043 1735 d p 2043
+
+1763 u 2043 1800 d p 2043 1828 u 2043 1865 d p 2043 1893 u 2043 1930 d p 2043
+
+1958 u 2043 1996 d p 2043 2023 u 2043 2061 d p 2043 2088 u 2043 2126 d p 2043
+
+2153 u 2043 2191 d p 2043 2218 u 2043 2256 d p 2043 2284 u 2043 2321 d p 2043
+
+2349 u 2043 2386 d p 2043 2414 u 2043 2451 d p 2043 2479 u 2043 2516 d p 2043
+
+2544 u 2043 2581 d p 2043 2609 u 2043 2646 d p 2043 2674 u 2043 2711 d p 2043
+
+2739 u 2043 2776 d p 2043 2804 u 2043 2841 d p 2043 2869 u 2043 2906 d p 2043
+
+2934 u 2043 2971 d p 2043 2999 u 2043 3036 d p 2043 3064 u 2043 3101 d p 2043
+
+3129 u 2043 3166 d p 2043 3194 u 2043 3231 d p 2043 3259 u 2043 3296 d p 2043
+
+3324 u 2043 3361 d p 2043 3389 u 2043 3426 d p 2043 3454 u 2043 3491 d p 2043
+
+3519 u 2043 3556 d p 2043 3584 u 2043 3621 d p 2043 3649 u 2043 3686 d p 2043
+
+3714 u 2043 3751 d p 2043 3779 u 2043 3816 d p 2043 3844 u 2043 3881 d p 2043
+
+3909 u 2043 3946 d p 2043 3974 u 2043 4011 d p 2043 4039 u 2043 4077 d p 2043
+
+4104 u 2043 4142 d p 2043 4169 u 2043 4207 d p 2043 4234 u 2043 4272 d p 2043
+
+4299 u 2043 4337 d p 2043 4365 u 2043 4402 d p 2043 4430 u 2043 4467 d p 2043
+
+4495 u 2043 4532 d p 2043 4560 u 2043 4593 d p initclip 255 0 0 f initclip 745
+
+920 3341 4593 clp 1926 920 u 1941 2756 d 1946 4593 d p 1924 920 u 1939 2756 d
+
+1944 4593 d p initclip initclip 745 920 3341 4593 clp 3119 920 u 3119 955 d p
+
+3119 983 u 3119 1020 d p 3119 1048 u 3119 1085 d p 3119 1113 u 3119 1150 d p
+
+3119 1178 u 3119 1215 d p 3119 1243 u 3119 1280 d p 3119 1308 u 3119 1345 d p
+
+3119 1373 u 3119 1410 d p 3119 1438 u 3119 1475 d p 3119 1503 u 3119 1540 d p
+
+3119 1568 u 3119 1605 d p 3119 1633 u 3119 1670 d p 3119 1698 u 3119 1735 d p
+
+3119 1763 u 3119 1800 d p 3119 1828 u 3119 1865 d p 3119 1893 u 3119 1930 d p
+
+3119 1958 u 3119 1996 d p 3119 2023 u 3119 2061 d p 3119 2088 u 3119 2126 d p
+
+3119 2153 u 3119 2191 d p 3119 2218 u 3119 2256 d p 3119 2284 u 3119 2321 d p
+
+3119 2349 u 3119 2386 d p 3119 2414 u 3119 2451 d p 3119 2479 u 3119 2516 d p
+
+3119 2544 u 3119 2581 d p 3119 2609 u 3119 2646 d p 3119 2674 u 3119 2711 d p
+
+3119 2739 u 3119 2776 d p 3119 2804 u 3119 2841 d p 3119 2869 u 3119 2906 d p
+
+3119 2934 u 3119 2971 d p 3119 2999 u 3119 3036 d p 3119 3064 u 3119 3101 d p
+
+3119 3129 u 3119 3166 d p 3119 3194 u 3119 3231 d p 3119 3259 u 3119 3296 d p
+
+3119 3324 u 3119 3361 d p 3119 3389 u 3119 3426 d p 3119 3454 u 3119 3491 d p
+
+3119 3519 u 3119 3556 d p 3119 3584 u 3119 3621 d p 3119 3649 u 3119 3686 d p
+
+3119 3714 u 3119 3751 d p 3119 3779 u 3119 3816 d p 3119 3844 u 3119 3881 d p
+
+3119 3909 u 3119 3946 d p 3119 3974 u 3119 4011 d p 3119 4039 u 3119 4077 d p
+
+3119 4104 u 3119 4142 d p 3119 4169 u 3119 4207 d p 3119 4234 u 3119 4272 d p
+
+3119 4299 u 3119 4337 d p 3119 4365 u 3119 4402 d p 3119 4430 u 3119 4467 d p
+
+3119 4495 u 3119 4532 d p 3119 4560 u 3119 4593 d p initclip 255 128 0 f
+
+initclip 745 920 3341 4593 clp 3341 920 u 3341 2756 d 3341 4593 d p initclip
+
+initclip 745 920 3341 4593 clp 3083 920 u 3083 955 d p 3083 983 u 3083 1020 d p
+
+3083 1048 u 3083 1085 d p 3083 1113 u 3083 1150 d p 3083 1178 u 3083 1215 d p
+
+3083 1243 u 3083 1280 d p 3083 1308 u 3083 1345 d p 3083 1373 u 3083 1410 d p
+
+3083 1438 u 3083 1475 d p 3083 1503 u 3083 1540 d p 3083 1568 u 3083 1605 d p
+
+3083 1633 u 3083 1670 d p 3083 1698 u 3083 1735 d p 3083 1763 u 3083 1800 d p
+
+3083 1828 u 3083 1865 d p 3083 1893 u 3083 1930 d p 3083 1958 u 3083 1996 d p
+
+3083 2023 u 3083 2061 d p 3083 2088 u 3083 2126 d p 3083 2153 u 3083 2191 d p
+
+3083 2218 u 3083 2256 d p 3083 2284 u 3083 2321 d p 3083 2349 u 3083 2386 d p
+
+3083 2414 u 3083 2451 d p 3083 2479 u 3083 2516 d p 3083 2544 u 3083 2581 d p
+
+3083 2609 u 3083 2646 d p 3083 2674 u 3083 2711 d p 3083 2739 u 3083 2776 d p
+
+3083 2804 u 3083 2841 d p 3083 2869 u 3083 2906 d p 3083 2934 u 3083 2971 d p
+
+3083 2999 u 3083 3036 d p 3083 3064 u 3083 3101 d p 3083 3129 u 3083 3166 d p
+
+3083 3194 u 3083 3231 d p 3083 3259 u 3083 3296 d p 3083 3324 u 3083 3361 d p
+
+3083 3389 u 3083 3426 d p 3083 3454 u 3083 3491 d p 3083 3519 u 3083 3556 d p
+
+3083 3584 u 3083 3621 d p 3083 3649 u 3083 3686 d p 3083 3714 u 3083 3751 d p
+
+3083 3779 u 3083 3816 d p 3083 3844 u 3083 3881 d p 3083 3909 u 3083 3946 d p
+
+3083 3974 u 3083 4011 d p 3083 4039 u 3083 4077 d p 3083 4104 u 3083 4142 d p
+
+3083 4169 u 3083 4207 d p 3083 4234 u 3083 4272 d p 3083 4299 u 3083 4337 d p
+
+3083 4365 u 3083 4402 d p 3083 4430 u 3083 4467 d p 3083 4495 u 3083 4532 d p
+
+3083 4560 u 3083 4593 d p initclip 0 0 0 f 80 845 4053 90 c 114 845 4090 90 c
+
+101 845 4124 90 c 100 845 4164 90 c 105 845 4194 90 c 99 845 4222 90 c 116 845
+
+4251 90 c 111 845 4283 90 c 114 845 4316 90 c 115 845 4347 90 c 58 845 4377 90
+
+c 766 3848 u 766 4567 d 1193 4567 d 1193 3848 d 766 3848 d p 0 0 255 f 5.00 cm
+
+setlinewidth 927 3883 u 927 4069 d p 925 3883 u 925 4069 d p 6.00 cm
+
+setlinewidth 0 255 0 f 996 3883 u 996 4069 d p 994 3883 u 994 4069 d p 255 0 0
+
+f 1065 3883 u 1065 4069 d p 1063 3883 u 1063 4069 d p 255 128 0 f 1133 3883 u
+
+1133 4069 d p 1132 3883 u 1132 4069 d p 0 0 0 f 0 0 255 f 76 949 4133 90 c 111
+
+949 4174 90 c 111 949 4214 90 c 112 949 4255 90 c 115 949 4293 90 c 32 949 4323
+
+90 c 111 949 4354 90 c 114 949 4388 90 c 32 949 4412 90 c 99 949 4442 90 c 111
+
+949 4480 90 c 105 949 4510 90 c 108 949 4529 90 c 0 255 0 f 82 1018 4139 90 c
+
+101 1018 4185 90 c 109 1018 4234 90 c 97 1018 4284 90 c 114 1018 4317 90 c 107
+
+1018 4348 90 c 45 1018 4380 90 c 52 1018 4413 90 c 54 1018 4453 90 c 53 1018
+
+4494 90 c 255 0 0 f 72 1087 4139 90 c 111 1087 4185 90 c 116 1087 4216 90 c 45
+
+1087 4241 90 c 108 1087 4263 90 c 111 1087 4293 90 c 111 1087 4333 90 c 112
+
+1087 4374 90 c 115 1087 4412 90 c 255 128 0 f 84 1156 4135 90 c 97 1156 4177 90
+
+c 110 1156 4218 90 c 103 1156 4258 90 c 111 1156 4299 90 c 0 0 0 f gsave
+
+showpage grestore 
